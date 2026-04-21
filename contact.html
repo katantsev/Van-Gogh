@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свяжитесь с нами — Ван Гог</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Об художнике</a></li>
+                <li><a href="gallery.html">Галерея картин</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Свяжитесь с нами</h1>
+        <p class="intro-text">Если у вас есть вопросы о творчестве Винсента Ван Гога или вы хотите поделиться своими мыслями, заполните форму ниже. Мы ответим вам в течение 24 часов.</p>
+
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name">Имя *</label>
+                <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Электронная почта *</label>
+                <input type="email" id="email" name="email" required placeholder="example@domain.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Номер телефона</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Тема обращения</label>
+                <select id="subject" name="subject">
+                    <option value="general">Общий вопрос</option>
+            <option value="exhibition">Информация о выставках</option>
+            <option value="research">Исследования творчества Ван Гога</option>
+            <option value="other">Другое</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Ваше сообщение *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Опишите ваш вопрос или предложение..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <span>Подписаться на рассылку новостей о творчестве Ван Гога</span>
+                </label>
+            </div>
+
+            <button type="submit">Отправить сообщение</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Альтернативные способы связи</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>Электронная почта</h3>
+                    <p>vangogh.museum@example.com</p>
+                </div>
+                <div class="info-item">
+                    <h3>Телефон</h3>
+                    <p>+7 (495) 123-45-67</p>
+                </div>
+                <div class="info-item">
+            <h3>Адрес</h3>
+            <p>Музей Ван Гога, Амстердам, Нидерланды</p>
+                </div>
+                <div class="info-item">
+            <h3>Часы работы</h3>
+            <p>Ежедневно с 9:00 до 17:00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Творчество Ван Гога. Все права защищены.</p>
+    </footer>
+</body>
+</html>
